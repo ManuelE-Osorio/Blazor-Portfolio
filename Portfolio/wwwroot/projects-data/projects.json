@@ -1,0 +1,62 @@
+[
+    {
+        "framework": "angular",
+        "name": "Sleep Tracker",
+        "description": "This is a big description for testing purposes. It Implements bla bla bla.",
+        "gifpath": "angular/angular1.gif",
+        "githublink": "https://www.github.com",
+        "skills": [
+            "ASP.NET",
+            "Observables",
+            "Angular"
+        ]
+    },
+    {
+        "framework": "angular",
+        "name": "Coffee tracker",
+        "description": "testing",
+        "gifpath": "angular/angular2.gif",
+        "githublink": "github.com",
+        "skills": [
+            "ASP.NET",
+            "Observables",
+            "Angular"
+        ]
+    },
+    {
+        "framework": "angular",
+        "name": "Tour of Heroes",
+        "description": "testing",
+        "gifpath": "blazor/blazor1.gif",
+        "githublink": "github.com",
+        "skills": [
+            "ASP.NET",
+            "Observables",
+            "Angular"
+        ]
+    },
+    {
+        "framework": "blazor",
+        "name": "Budget Manager",
+        "description": "testing",
+        "gifpath": "blazor/blazor1.gif",
+        "githublink": "github.com",
+        "skills": [
+            "ASP.NET",
+            "Observables",
+            "Angular"
+        ]
+    },
+    {
+        "framework": "mvc",
+        "name": "Movies Database",
+        "description": "testing",
+        "gifpath": "mvc/mvc2.gif",
+        "githublink": "github.com",
+        "skills": [
+            "ASP.NET",
+            "Observables",
+            "Angular"
+        ]
+    }
+]
