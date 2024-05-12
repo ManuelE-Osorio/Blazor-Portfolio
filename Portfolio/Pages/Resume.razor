@@ -1,7 +1,76 @@
 ﻿@page "/resume"
+@inject IStringLocalizer<Localization.Resume> Loc
+@inject Services.ResumeService _resumeService
 
-<h3>Resume</h3>
+<MudTimeline>
+    @foreach(var project in projects)
+    {
+        <ResumeTimeLineItem item="project"></ResumeTimeLineItem>
+    }
+
+    @foreach(var work in works)
+    {
+        <ResumeTimeLineItem item="work"></ResumeTimeLineItem>
+    }
+
+    @foreach(var education in educations)
+    {
+        <ResumeTimeLineItem item="education"></ResumeTimeLineItem>
+    }
+</MudTimeline>
+
+<MudTimeline>
+
+</MudTimeline>
+
+<MudTimeline>
+
+</MudTimeline>
 
 @code {
+    private ResumeFromJson? resumeItems;
+    private List<ResumeItem> projects = [];
+    private List<ResumeItem> works = [];
+    private List<ResumeItem> educations = [];
 
+    private string[] Active = new String[] {"active", "", "", "", "" };
+    public int rows = 1;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        resumeItems = await _resumeService.GetResumeQtyAsync();
+        if(resumeItems is null)
+            return;
+
+        for(int i = 1; i <= resumeItems.Project; i++)
+        {
+            projects.Add( new ResumeItem{
+                Name = Loc[$"Project{i}Name"],
+                Year = Loc[$"Project{i}Year"],
+                Description = Loc[$"Project{i}Description"],
+                Company = Loc[$"Project{i}Company"],
+            });
+        }
+
+        for(int i = 1; i <= resumeItems.Work; i++)
+        {
+            works.Add( new ResumeItem{
+                Name = Loc[$"Work{i}Name"],
+                Year = Loc[$"Work{i}Year"],
+                Description = Loc[$"Work{i}Description"],
+                Company = Loc[$"Work{i}Company"],
+            });
+        }
+
+        for(int i = 1; i <= resumeItems.Education; i++)
+        {
+            educations.Add( new ResumeItem{
+                Name = Loc[$"Education{i}Name"],
+                Year = Loc[$"Education{i}Year"],
+                Description = Loc[$"Education{i}Description"],
+                Company = Loc[$"Education{i}Company"],
+            });
+        }
+    }
 }

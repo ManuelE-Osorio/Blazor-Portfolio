@@ -1,59 +1,54 @@
 [
     {
-        "framework": "angular",
-        "name": "Sleep Tracker",
-        "description": "This is a big description for testing purposes. It Implements bla bla bla.",
+        "framework": "Angular",
+        "id": 1,
         "gifpath": "angular/angular1.gif",
         "githublink": "https://www.github.com",
-        "skills": [
+        "technologies": [
             "ASP.NET",
             "Observables",
             "Angular"
         ]
     },
     {
-        "framework": "angular",
-        "name": "Coffee tracker",
-        "description": "testing",
+        "framework": "Angular",
+        "id": 2,
         "gifpath": "angular/angular2.gif",
         "githublink": "github.com",
-        "skills": [
+        "technologies": [
             "ASP.NET",
             "Observables",
             "Angular"
         ]
     },
     {
-        "framework": "angular",
-        "name": "Tour of Heroes",
-        "description": "testing",
+        "framework": "Angular",
+        "id": 3,
         "gifpath": "blazor/blazor1.gif",
         "githublink": "github.com",
-        "skills": [
+        "technologies": [
             "ASP.NET",
             "Observables",
             "Angular"
         ]
     },
     {
-        "framework": "blazor",
-        "name": "Budget Manager",
-        "description": "testing",
+        "framework": "Blazor",
+        "id": 1,
         "gifpath": "blazor/blazor1.gif",
         "githublink": "github.com",
-        "skills": [
+        "technologies": [
             "ASP.NET",
             "Observables",
             "Angular"
         ]
     },
     {
-        "framework": "mvc",
-        "name": "Movies Database",
-        "description": "testing",
+        "framework": "MVC",
+        "id": 1,
         "gifpath": "mvc/mvc2.gif",
         "githublink": "github.com",
-        "skills": [
+        "technologies": [
             "ASP.NET",
             "Observables",
             "Angular"

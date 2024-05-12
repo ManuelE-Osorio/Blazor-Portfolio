@@ -1,0 +1,55 @@
+@using System.Globalization
+@inject IJSRuntime JS
+@inject NavigationManager Navigation
+
+<MudPaper Elevation="0" Width="100px" Class="mud-theme-primary text-white">
+<MudSelect 
+    T="CultureInfo" 
+    Text="Language" 
+    ToStringFunc="@converter"  
+    ValueChanged="ApplySelectedCultureAsync" 
+    AdornmentColor="Color.Default">
+
+    
+    @foreach (var culture in supportedCultures)
+    {
+        
+        <MudSelectItem Value="@(culture)"/>
+    }
+</MudSelect>
+</MudPaper>
+
+@* <select @bind="selectedCulture" @bind:after="ApplySelectedCultureAsync">
+    @foreach (var culture in supportedCultures)
+    {
+        <option value="@culture">@culture.ThreeLetterISOLanguageName</option>
+    }
+</select> *@
+
+@code
+{
+    private CultureInfo[] supportedCultures = new[]
+    {
+        new CultureInfo("en-US"),
+        new CultureInfo("es-419"),
+    };
+    readonly Func<CultureInfo, string> converter = p => p.TwoLetterISOLanguageName;
+
+    private CultureInfo? selectedCulture;
+
+    protected override void OnInitialized()
+    {
+        selectedCulture = CultureInfo.CurrentCulture;
+    }
+
+    private async Task ApplySelectedCultureAsync(CultureInfo select)
+    {
+        selectedCulture = select;
+        if (CultureInfo.CurrentCulture != selectedCulture)
+        {
+            await JS.InvokeVoidAsync("blazorCulture.set", selectedCulture!.Name);
+
+            Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
+        }
+    }
+}

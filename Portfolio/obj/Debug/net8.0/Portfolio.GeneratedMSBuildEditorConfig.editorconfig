@@ -26,16 +26,28 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Components/CultureSelector.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9DdWx0dXJlU2VsZWN0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Components/ProjectCard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Qcm9qZWN0Q2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Pages/About.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQucmF6b3I=
+[/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Components/ResumeTimeLineItem.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9SZXN1bWVUaW1lTGluZUl0ZW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
+[/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Pages/Projects.razor]
@@ -46,18 +58,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzdW1lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvV2VhdGhlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
-
-[/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-57rfh191dz
-
-[/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-jey3l8hr1c

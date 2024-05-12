@@ -6,18 +6,18 @@ namespace Portfolio.Services;
 public class ProjectService
 {
     private readonly HttpClient _client;
-    private readonly Task<List<Project>?> _getProjectsTask;
+    private readonly Task<List<ProjectFromJson>?> _getProjectsTask;
     public ProjectService(HttpClient client)
     {
         _client = client;
         _getProjectsTask =
-            _client.GetFromJsonAsync<List<Project>>(
+            _client.GetFromJsonAsync<List<ProjectFromJson>>(
                 "projects-data/projects.json");
     }
 
-    public async Task<List<Project>?> GetProjectsAsync()
+    public async Task<List<ProjectFromJson>?> GetProjectsAsync()
     {
-        List<Project>? projects;
+        List<ProjectFromJson>? projects;
         try
         {
             projects = await _getProjectsTask;

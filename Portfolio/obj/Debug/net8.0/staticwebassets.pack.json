@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
     },
     {
-      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/obj/Debug/net8.0/scopedcss/bundle/Portfolio.styles.css",
-      "PackagePath": "staticwebassets/Portfolio.styles.css"
-    },
-    {
       "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/angular/angular1.gif",
       "PackagePath": "staticwebassets/angular/angular1.gif"
     },
@@ -27,14 +23,6 @@
     {
       "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/css/app.css",
       "PackagePath": "staticwebassets/css/app.css"
-    },
-    {
-      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/css/bootstrap/bootstrap.min.css",
-      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
-    },
-    {
-      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/css/bootstrap/bootstrap.min.css.map",
-      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
     },
     {
       "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/favicon.png",
@@ -57,8 +45,8 @@
       "PackagePath": "staticwebassets/projects-data/projects.json"
     },
     {
-      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/sample-data/weather.json",
-      "PackagePath": "staticwebassets/sample-data/weather.json"
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/projects-data/resume.json",
+      "PackagePath": "staticwebassets/projects-data/resume.json"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Portfolio.Microsoft.AspNetCore.StaticWebAssets.props",

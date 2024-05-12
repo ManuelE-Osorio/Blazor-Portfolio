@@ -1,55 +1,91 @@
 ﻿@page "/projects"
-
+@inject IStringLocalizer<Localization.Projects> Loc
 @inject Services.ProjectService _projectService
 
 <PageTitle>Projects</PageTitle>
 
+<MudPaper Width="100%" Elevation="0">
+    <MudContainer>
 
 
-
-<ul class="nav nav-tabs">
-<li class="nav-item">
-    <button class="nav-link @Active[0]" @onclick="@(() => SetProject(0))">Angular</button>
-</li>
-<li class="nav-item">
-    <button class="nav-link @Active[1]" @onclick="@(() => SetProject(1))">MVC</button>
-</li>
-<li class="nav-item">
-    <button class="nav-link @Active[2]" @onclick="@(() => SetProject(2))">Blazor</button>
-</li>
-<li class="nav-item">
-    <button class="nav-link @Active[3]" @onclick="@(() => SetProject(3))">React</button>
-</li>
-<li class="nav-item">
-    <button class="nav-link @Active[4]" @onclick="@(() => SetProject(4))">Console</button>
-</li>
-</ul>
-
+    
 @if (projects == null)
 {
     <p><em>Loading...</em></p>
 }
 else
 {
-
-    <div class="container text-center">
-        @for(int i = 0; i<rows; i++)
-        {
-            <div class="row">
-                <div class="col p-4">
-                    <ProjectCard project="projects[i*2]"></ProjectCard>
-                </div>
-                <div class="col p-4">
-                    @if(projects.Count > i*2+1)
-                    {
-                        <ProjectCard project="projects[i*2+1]"></ProjectCard>
-                    }
-                </div>
-            </div>
-        }
-    
-    </div>
+<MudTabs Elevation="4" Rounded="true" Centered="true" Position="Position.Top">
+    <MudTabPanel Text="Angular">
+        <MudGrid Class="py-10">
+            @if(angularProjects is not null)
+            @foreach(var project in angularProjects)
+            {
+                <MudItem xs="6">
+                    <MudPaper Class="d-flex align-center justify-center mud-width-full">
+                        <ProjectCard project="project"></ProjectCard>
+                    </MudPaper>
+                </MudItem>
+            }
+        </MudGrid>
+    </MudTabPanel>
+    <MudTabPanel Text="MVC">
+        <MudGrid Class="py-10">
+            @if(mvcProjects is not null)
+            @foreach(var project in mvcProjects)
+            {
+                <MudItem xs="6">
+                    <MudPaper Class="d-flex align-center justify-center mud-width-full">
+                        <ProjectCard project="project"></ProjectCard>
+                    </MudPaper>
+                </MudItem>
+            }
+        </MudGrid>
+    </MudTabPanel>
+    <MudTabPanel Text="Blazor">
+        <MudGrid Class="py-10">
+            @if(blazorProjects is not null)
+            @foreach(var project in blazorProjects)
+            {
+                <MudItem xs="6">
+                    <MudPaper Class="d-flex align-center justify-center mud-width-full">
+                        <ProjectCard project="project"></ProjectCard>
+                    </MudPaper>
+                </MudItem>
+            }
+        </MudGrid>
+    </MudTabPanel>
+    <MudTabPanel Text="React">
+        <MudGrid Class="py-10">
+            @if(reactProjects is not null)
+            @foreach(var project in reactProjects)
+            {
+                <MudItem xs="6">
+                    <MudPaper Class="d-flex align-center justify-center mud-width-full">
+                        <ProjectCard project="project"></ProjectCard>
+                    </MudPaper>
+                </MudItem>
+            }
+        </MudGrid>
+    </MudTabPanel>
+    <MudTabPanel Text="Console">
+        <MudGrid Class="py-10">
+            @if(consoleProjects is not null)
+            @foreach(var project in consoleProjects)
+            {
+                <MudItem xs="6">
+                    <MudPaper Class="d-flex align-center justify-center mud-width-full py-8">
+                        <ProjectCard project="project"></ProjectCard>
+                    </MudPaper>
+                </MudItem>
+            }
+        </MudGrid>
+    </MudTabPanel>
+</MudTabs>
 }
+    </MudContainer>
+</MudPaper>
+
 
 @code {
     private List<Project>? projects;
@@ -64,41 +100,46 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        projects = await _projectService.GetProjectsAsync();
-        if(projects is null)
+        var projectsfromJson = await _projectService.GetProjectsAsync();
+        if(projectsfromJson is null)
             return;
 
-        angularProjects = projects.Where( p => p.Framework == "angular").ToList();
-        mvcProjects = projects.Where( p => p.Framework == "mvc").ToList();
-        blazorProjects = projects.Where( p => p.Framework == "blazor").ToList();
-        reactProjects = projects.Where( p => p.Framework == "react").ToList();
-        consoleProjects = projects.Where( p => p.Framework == "console").ToList();
+        angularProjects = projectsfromJson
+            .Where( p => p.Framework == "Angular")
+            .Select
+            ( p => 
+                new Project(p, Loc[$"{p.Framework}{p.Id}Name"],Loc[$"{p.Framework}{p.Id}Description"])
+            )
+            .ToList();
+        mvcProjects = projectsfromJson
+            .Where( p => p.Framework == "MVC")
+            .Select
+            ( p => 
+                new Project(p, Loc[$"{p.Framework}{p.Id}Name"],Loc[$"{p.Framework}{p.Id}Description"])
+            )
+            .ToList();
+        blazorProjects = projectsfromJson
+            .Where( p => p.Framework == "Blazor")
+            .Select
+            ( p => 
+                new Project(p, Loc[$"{p.Framework}{p.Id}Name"],Loc[$"{p.Framework}{p.Id}Description"])
+            )
+            .ToList();
+        reactProjects = projectsfromJson
+            .Where( p => p.Framework == "React")
+            .Select
+            ( p => 
+                new Project(p, Loc[$"{p.Framework}{p.Id}Name"],Loc[$"{p.Framework}{p.Id}Description"])
+            )
+            .ToList();
+        consoleProjects = projectsfromJson
+            .Where( p => p.Framework == "Console")
+            .Select
+            ( p => 
+                new Project(p, Loc[$"{p.Framework}{p.Id}Name"],Loc[$"{p.Framework}{p.Id}Description"])
+            )
+            .ToList();
         projects = angularProjects;
-        rows = (int) Math.Ceiling((double)(projects?.Count ?? 0)/2);
-    }
-
-    private void SetProject(int id)
-    {
-        Active = Active.Select( p => "").ToArray();
-        Active[id] = "active";
-        switch (id)
-        {
-            case(0):
-                projects = angularProjects;
-                break;
-            case(1):
-                projects = mvcProjects;
-                break;
-            case(2):
-                projects = blazorProjects;
-                break;
-            case(3):
-                projects = reactProjects;
-                break;
-            case(4):
-                projects = consoleProjects;
-                break;
-        }
         rows = (int) Math.Ceiling((double)(projects?.Count ?? 0)/2);
     }
 }

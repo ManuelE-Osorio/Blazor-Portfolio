@@ -1,0 +1,23 @@
+@if(item is not null)
+{
+    <MudTimelineItem Color="Color.Dark" Elevation="25" TimelineAlign="TimelineAlign.End">
+            <ItemOpposite>
+                <MudText Color="Color.Dark" Typo="Typo.h6">@item.Year</MudText>
+            </ItemOpposite>
+            <ItemContent>
+                <MudCard Outlined="true" Elevation="25">
+                <MudCardContent>
+                    <MudText Color="Color.Dark" Typo="Typo.h6" GutterBottom="true">@item.Name</MudText>
+                    <MudText Typo="Typo.body2">@item.Company</MudText>
+                    <MudText Typo="Typo.body2">@item.Description</MudText>
+                </MudCardContent>
+                </MudCard>
+            </ItemContent>
+    </MudTimelineItem>
+}
+
+
+@code {
+    [Parameter]
+    public ResumeItem? item {get; set;}
+}
