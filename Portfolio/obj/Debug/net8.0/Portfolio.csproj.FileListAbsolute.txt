@@ -1055,3 +1055,9 @@
 /home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/obj/Debug/net8.0/compressed/at8sfsrkwi.gz
 /home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/obj/Debug/net8.0/Portfolio.Localization.Resume.en.resources
 /home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/obj/Debug/net8.0/Portfolio.Localization.Resume.es.resources
+/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/obj/Debug/net8.0/Portfolio.Localization.About.en.resources
+/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/obj/Debug/net8.0/Portfolio.Localization.Contact.en.resources
+/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/obj/Debug/net8.0/Portfolio.Localization.About.es.resources
+/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/obj/Debug/net8.0/Portfolio.Localization.Contact.es.resources
+/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/obj/Debug/net8.0/Portfolio.Localization.MainLayout.en.resources
+/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/obj/Debug/net8.0/Portfolio.Localization.MainLayout.es.resources

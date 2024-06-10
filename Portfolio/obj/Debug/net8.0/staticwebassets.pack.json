@@ -9,16 +9,40 @@
       "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
     },
     {
-      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/angular/angular1.gif",
-      "PackagePath": "staticwebassets/angular/angular1.gif"
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/angular/coffeetracker.gif",
+      "PackagePath": "staticwebassets/angular/coffeetracker.gif"
     },
     {
-      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/angular/angular2.gif",
-      "PackagePath": "staticwebassets/angular/angular2.gif"
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/angular/quizgame.gif",
+      "PackagePath": "staticwebassets/angular/quizgame.gif"
     },
     {
-      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/blazor/blazor1.gif",
-      "PackagePath": "staticwebassets/blazor/blazor1.gif"
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/angular/sleeptracker.gif",
+      "PackagePath": "staticwebassets/angular/sleeptracker.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/angular/tourofheroes.gif",
+      "PackagePath": "staticwebassets/angular/tourofheroes.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/blazor/portfolio.gif",
+      "PackagePath": "staticwebassets/blazor/portfolio.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/console/drinks.gif",
+      "PackagePath": "staticwebassets/console/drinks.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/console/excel.gif",
+      "PackagePath": "staticwebassets/console/excel.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/console/flashcards.gif",
+      "PackagePath": "staticwebassets/console/flashcards.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/console/phonebook.gif",
+      "PackagePath": "staticwebassets/console/phonebook.gif"
     },
     {
       "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/css/app.css",
@@ -37,8 +61,72 @@
       "PackagePath": "staticwebassets/index.html"
     },
     {
-      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/mvc/mvc2.gif",
-      "PackagePath": "staticwebassets/mvc/mvc2.gif"
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/mvc/budget.gif",
+      "PackagePath": "staticwebassets/mvc/budget.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/mvc/budget2.gif",
+      "PackagePath": "staticwebassets/mvc/budget2.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/mvc/movies.gif",
+      "PackagePath": "staticwebassets/mvc/movies.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/mvc/todo.gif",
+      "PackagePath": "staticwebassets/mvc/todo.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/og/budget.gif",
+      "PackagePath": "staticwebassets/og/budget.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/og/budget2.gif",
+      "PackagePath": "staticwebassets/og/budget2.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/og/coffeetracker.gif",
+      "PackagePath": "staticwebassets/og/coffeetracker.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/og/drinks.gif",
+      "PackagePath": "staticwebassets/og/drinks.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/og/excel.gif",
+      "PackagePath": "staticwebassets/og/excel.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/og/flashcards.gif",
+      "PackagePath": "staticwebassets/og/flashcards.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/og/movies.gif",
+      "PackagePath": "staticwebassets/og/movies.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/og/out.gif",
+      "PackagePath": "staticwebassets/og/out.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/og/phonebook.gif",
+      "PackagePath": "staticwebassets/og/phonebook.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/og/portfolio.gif",
+      "PackagePath": "staticwebassets/og/portfolio.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/og/sleeptracker.gif",
+      "PackagePath": "staticwebassets/og/sleeptracker.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/og/todo.gif",
+      "PackagePath": "staticwebassets/og/todo.gif"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/og/tourofheroes.gif",
+      "PackagePath": "staticwebassets/og/tourofheroes.gif"
     },
     {
       "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/projects-data/projects.json",
@@ -47,6 +135,18 @@
     {
       "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/projects-data/resume.json",
       "PackagePath": "staticwebassets/projects-data/resume.json"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/projects-data/skills.json",
+      "PackagePath": "staticwebassets/projects-data/skills.json"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/resume/ManuelOsorioCVEN.pdf",
+      "PackagePath": "staticwebassets/resume/ManuelOsorioCVEN.pdf"
+    },
+    {
+      "Id": "/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/wwwroot/resume/ManuelOsorioCVES.pdf",
+      "PackagePath": "staticwebassets/resume/ManuelOsorioCVES.pdf"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Portfolio.Microsoft.AspNetCore.StaticWebAssets.props",

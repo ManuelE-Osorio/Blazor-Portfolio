@@ -1,0 +1,60 @@
+[
+    {
+        "name": "C#",
+        "rating": 5
+    },
+    {
+        "name": "C",
+        "rating": 4
+    },
+    {
+        "name": "Python",
+        "rating": 4
+    },
+    {
+        "name": "Javascript",
+        "rating": 4
+    }
+    ,
+    {
+        "name": "Typescript",
+        "rating": 4
+    },
+    {
+        "name": "ASP.NET",
+        "rating": 5
+    },
+    {
+        "name": "Entity Framework",
+        "rating": 5
+    },
+    {
+        "name": "MVC",
+        "rating": 4
+    },
+    {
+        "name": "Angular",
+        "rating": 4
+    },
+    {
+        "name": "Blazor",
+        "rating": 3
+    },
+    {
+        "name": "React",
+        "rating": 2
+    },
+    {
+        "name": "TSQL",
+        "rating": 3
+    },
+    {
+        "name": "Azure",
+        "rating": 3
+    },
+    {
+        "name": "Azure ML",
+        "rating": 3
+    }
+
+]

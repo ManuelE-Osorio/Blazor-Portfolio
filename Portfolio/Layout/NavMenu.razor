@@ -1,9 +1,10 @@
 ﻿@inject IStringLocalizer<Localization.NavMenu> Loc
 
-<MudNavMenu>
-    <MudNavLink Href="/" Match="NavLinkMatch.All">@Loc["About"]</MudNavLink>
-    <MudNavLink Href="/projects" Match="NavLinkMatch.All">@Loc["Projects"]</MudNavLink>
-    <MudNavLink Href="/resume" Match="NavLinkMatch.All">@Loc["Resume"]</MudNavLink>
+<MudNavMenu Color="Color.Inherit">
+    <MudNavLink Class="mt-4" IconColor="Color.Inherit" Icon="@Icons.Material.Filled.Info" Href="/" Match="NavLinkMatch.All">@Loc["About"]</MudNavLink>
+    <MudNavLink IconColor="Color.Inherit" Icon="@Icons.Material.Filled.Apps" Href="/projects" Match="NavLinkMatch.All">@Loc["Projects"]</MudNavLink>
+    <MudNavLink IconColor="Color.Inherit" Icon="@Icons.Material.Filled.Insights" Href="/resume" Match="NavLinkMatch.All">@Loc["Resume"]</MudNavLink>
+    <MudNavLink IconColor="Color.Inherit" Icon="@Icons.Material.Filled.ContactPage" Href="/contact" Match="NavLinkMatch.All">@Loc["Contact"]</MudNavLink>
 </MudNavMenu>
 
 

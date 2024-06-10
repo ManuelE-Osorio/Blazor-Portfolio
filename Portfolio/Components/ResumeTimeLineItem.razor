@@ -1,14 +1,12 @@
 @if(item is not null)
 {
-    <MudTimelineItem Color="Color.Dark" Elevation="25" TimelineAlign="TimelineAlign.End">
-            <ItemOpposite>
-                <MudText Color="Color.Dark" Typo="Typo.h6">@item.Year</MudText>
-            </ItemOpposite>
+    <MudTimelineItem Color="color" Elevation="25">
             <ItemContent>
                 <MudCard Outlined="true" Elevation="25">
                 <MudCardContent>
-                    <MudText Color="Color.Dark" Typo="Typo.h6" GutterBottom="true">@item.Name</MudText>
-                    <MudText Typo="Typo.body2">@item.Company</MudText>
+                    <MudText Color="color" Typo="Typo.h6" GutterBottom="true">@item.Name</MudText>
+                    <MudText Color="color" Typo="Typo.subtitle1">@item.Year</MudText>
+                    <MudText Typo="Typo.body1" Class="py-2"><strong>@item.Company</strong></MudText>
                     <MudText Typo="Typo.body2">@item.Description</MudText>
                 </MudCardContent>
                 </MudCard>
@@ -20,4 +18,7 @@
 @code {
     [Parameter]
     public ResumeItem? item {get; set;}
+    
+    [Parameter]
+    public MudBlazor.Color color {get; set;}
 }

@@ -1,57 +1,176 @@
 [
     {
         "framework": "Angular",
-        "id": 1,
-        "gifpath": "angular/angular1.gif",
-        "githublink": "https://www.github.com",
+        "id": 4,
+        "gifpath": "angular/quizgame.gif",
+        "githublink": "https://github.com/ManuelE-Osorio/Angular-QuizGame",
         "technologies": [
-            "ASP.NET",
-            "Observables",
-            "Angular"
-        ]
-    },
-    {
-        "framework": "Angular",
-        "id": 2,
-        "gifpath": "angular/angular2.gif",
-        "githublink": "github.com",
-        "technologies": [
-            "ASP.NET",
-            "Observables",
-            "Angular"
+            "Angular Material",
+            "Guards",
+            "Reactive Forms",
+            "HttpClient",
+            "Routing",
+            "ASP.NET Core WebApi",
+            "ASP.NET Identity",
+            "Entity Framework",
+            "SQL Server",
+            "Server Side Validation"
         ]
     },
     {
         "framework": "Angular",
         "id": 3,
-        "gifpath": "blazor/blazor1.gif",
-        "githublink": "github.com",
+        "gifpath": "angular/sleeptracker.gif",
+        "githublink": "https://github.com/ManuelE-Osorio/Angular-SleepTracker",
         "technologies": [
-            "ASP.NET",
-            "Observables",
-            "Angular"
+            "Angular Material",
+            "Guards",
+            "Reactive Forms",
+            "HttpClient",
+            "Routing",
+            "ASP.NET Core WebApi",
+            "ASP.NET Identity",
+            "Entity Framework",
+            "SQL Server",
+            "Server Side Validation"
+        ]
+    },
+    {
+        "framework": "Angular",
+        "id": 2,
+        "gifpath": "angular/coffeetracker.gif",
+        "githublink": "https://github.com/ManuelE-Osorio/Angular-CoffeeTracker",
+        "technologies": [
+            "NgModules",
+            "RXJS Observables",
+            "Reactive Forms",
+            "HttpClient",
+            "Routing",
+            "Data Binding",
+            "ASP.NET Core WebApi",
+            "Entity Framework",
+            "SQL Server",
+            "Server Side Validation"
+        ]
+    },
+    {
+        "framework": "Angular",
+        "id": 1,
+        "gifpath": "angular/tourofheroes.gif",
+        "githublink": "https://github.com/ManuelE-Osorio/Angular-Tour-Of-Heroes",
+        "technologies": [
+            "NgModules",
+            "RXJS Observables",
+            "Routing",
+            "Data Binding",
+            "HttpClient"
         ]
     },
     {
         "framework": "Blazor",
         "id": 1,
-        "gifpath": "blazor/blazor1.gif",
-        "githublink": "github.com",
+        "gifpath": "blazor/portfolio.gif",
+        "githublink": "https://github.com/ManuelE-Osorio/Blazor-Portfolio",
         "technologies": [
-            "ASP.NET",
-            "Observables",
-            "Angular"
+            "Blazor",
+            "MudBlazor",
+            "Globalization & Localization"
         ]
     },
     {
         "framework": "MVC",
-        "id": 1,
-        "gifpath": "mvc/mvc2.gif",
-        "githublink": "github.com",
+        "id": 3,
+        "gifpath": "mvc/budget2.gif",
+        "githublink": "https://github.com/ManuelE-Osorio/ASP.NET-MVC-Budget",
         "technologies": [
-            "ASP.NET",
-            "Observables",
-            "Angular"
+            "ASP.NET Core MVC",
+            "AntiForgeryToken",
+            "Entity Framework",
+            "SQL Server",
+            "JS Fetch API",
+            "Razor Syntax",
+            "JS Dom Manipulation",
+            "Bootstrap"
+        ]
+    },
+    {
+        "framework": "MVC",
+        "id": 2,
+        "gifpath": "mvc/todo.gif",
+        "githublink": "https://github.com/ManuelE-Osorio/ASP.NET-MVC-Todo-List",
+        "technologies": [
+            "ASP.NET Core",
+            "Minimal Web API",
+            "Entity Framework",
+            "SQL Server",
+            "JS Fetch API",
+            "JS Dom Manipulation",
+            "Bootstrap"
+        ]
+    }
+    ,   
+    {
+        "framework": "MVC",
+        "id": 1,
+        "gifpath": "mvc/movies.gif",
+        "githublink": "https://github.com/ManuelE-Osorio/ASP.NET-Core-Identity-Movies",
+        "technologies": [
+            "ASP.NET Core MVC",
+            "ASP.NET Identity",
+            "Serilog",
+            "Entity Framework",
+            "SQL Server",
+            "Razor Syntax",
+            "JS Dom Manipulation",
+            "Bootstrap"
+        ]
+    },
+    {
+        "framework": "Console",
+        "id": 4,
+        "gifpath": "console/drinks.gif",
+        "githublink": "https://github.com/ManuelE-Osorio/CodeReviews.Console.Drinks",
+        "technologies": [
+            "HttpRequest",
+            "JSON Deserialization",
+            "OO Programming",
+            "Design Patterns"
+        ]
+    },
+    {
+        "framework": "Console",
+        "id": 3,
+        "gifpath": "console/flashcards.gif",
+        "githublink": "https://github.com/ManuelE-Osorio/CodeReviews.Console.Flashcards",
+        "technologies": [
+            "ADO.NET",
+            "SQL Server",
+            "Sql Client",
+            "OO Programming"
+        ]
+    },
+    {
+        "framework": "Console",
+        "id": 2,
+        "gifpath": "console/excel.gif",
+        "githublink": "https://github.com/ManuelE-Osorio/CodeReviews.Console.ExcelReader",
+        "technologies": [
+            "EPPlus",
+            "Entity Framework",
+            "SQL Server",
+            "Design Patterns"
+        ]
+    },
+    {
+        "framework": "Console",
+        "id": 1,
+        "gifpath": "console/phonebook.gif",
+        "githublink": "https://github.com/ManuelE-Osorio/CodeReviews.Console.Phonebook",
+        "technologies": [
+            "libphonenumber",
+            "Entity Framework",
+            "SQL Server",
+            "Data Validation"
         ]
     }
 ]

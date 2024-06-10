@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWJvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Pages/Contact.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGFjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/sulaco/Desktop/Code/Projects/Blazor-Portfolio/Portfolio/Pages/Projects.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvamVjdHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

@@ -18,6 +18,7 @@ public class PortfolioApp
         builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
         builder.Services.AddScoped<ProjectService>();
         builder.Services.AddScoped<ResumeService>();
+        builder.Services.AddScoped<SkillService>();
 
         builder.Services.AddLocalization();
         builder.Services.AddMudServices();

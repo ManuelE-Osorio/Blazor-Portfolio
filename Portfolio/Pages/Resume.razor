@@ -2,41 +2,94 @@
 @inject IStringLocalizer<Localization.Resume> Loc
 @inject Services.ResumeService _resumeService
 
-<MudTimeline>
-    @foreach(var project in projects)
+<PageTitle>Resume</PageTitle>
+
+<MudPaper Elevation="0" Class="mt-15 ml-7">
+
+
+@if(resumeItems is null)
+{
+    <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="py-7"/>
+}
+else
+{  
+    @if(projectItems.Count > 0)
     {
-        <ResumeTimeLineItem item="project"></ResumeTimeLineItem>
+        <MudContainer MaxWidth="MaxWidth.Large" Class="pb-5">
+        <MudText Typo="Typo.h3" Class="my-5" id="projectItems">@Loc["Projects"]</MudText>
+        <MudTimeline Class="my-5" TimelinePosition="TimelinePosition.Start">
+            @foreach(var project in projectItems)
+            {
+                <ResumeTimeLineItem item="project" color="Color.Secondary"></ResumeTimeLineItem>
+            }
+        </MudTimeline>
+        </MudContainer>
     }
 
-    @foreach(var work in works)
+    <MudDivider></MudDivider>
+
+    @if(workItems.Count > 0)
     {
-        <ResumeTimeLineItem item="work"></ResumeTimeLineItem>
+        <MudContainer MaxWidth="MaxWidth.Large" Class="py-5">
+        <MudText Typo="Typo.h3" Class="my-5" id="experience">@Loc["Experience"]</MudText>
+        <MudTimeline Class="my-5" TimelinePosition="TimelinePosition.Start">
+            @foreach(var work in workItems)
+            {
+                <ResumeTimeLineItem item="work" color="Color.Warning"></ResumeTimeLineItem>
+            }
+        </MudTimeline>
+        </MudContainer>
     }
 
-    @foreach(var education in educations)
+    <MudDivider></MudDivider>
+
+    @if(educationItems.Count > 0)
     {
-        <ResumeTimeLineItem item="education"></ResumeTimeLineItem>
+        <MudContainer MaxWidth="MaxWidth.Large" Class="py-5">
+        <MudText Typo="Typo.h3" Class="my-5" id="education">@Loc["Education"]</MudText>
+        <MudTimeline Class="my-5" TimelinePosition="TimelinePosition.Start">
+            @foreach(var education in educationItems)
+            {
+                <ResumeTimeLineItem item="education" color="Color.Info"></ResumeTimeLineItem>
+            }
+        </MudTimeline>
+        </MudContainer>
     }
-</MudTimeline>
 
-<MudTimeline>
+    <MudDivider></MudDivider>
 
-</MudTimeline>
+    <MudContainer MaxWidth="MaxWidth.Large" Class="py-5">
+    <MudText Typo="Typo.h3" Class="my-5" id="download">@Loc["Download"]</MudText>
+    <MudGrid Justify="@Justify.Center">
+    <MudButton Class="mb-16" 
+        Variant="Variant.Filled" 
+        StartIcon="@Icons.Material.Filled.Download" 
+        Href="resume/ManuelOsorioCVEN.pdf" 
+        Color="@Color.Primary">
+        @Loc["Resume"]
+    </MudButton>
+    </MudGrid>
+    </MudContainer>
 
-<MudTimeline>
+}
 
-</MudTimeline>
+
+</MudPaper>
+
+<MudDrawer Open="true" Anchor="Anchor.Right" ClipMode="DrawerClipMode.Always" Elevation="0" Class="pt-8" DisableOverlay="true">
+<MudNavMenu>
+        <MudNavLink Href="resume#projectItems" >@Loc["Projects"]</MudNavLink>
+        <MudNavLink Href="resume#experience" >@Loc["Experience"]</MudNavLink>
+        <MudNavLink Href="resume#education" >@Loc["Education"]</MudNavLink>
+        <MudNavLink Href="resume#download" >@Loc["Download"]</MudNavLink>
+</MudNavMenu>
+</MudDrawer>
 
 @code {
     private ResumeFromJson? resumeItems;
-    private List<ResumeItem> projects = [];
-    private List<ResumeItem> works = [];
-    private List<ResumeItem> educations = [];
-
-    private string[] Active = new String[] {"active", "", "", "", "" };
-    public int rows = 1;
-
-
+    private List<ResumeItem> projectItems = [];
+    private List<ResumeItem> workItems = [];
+    private List<ResumeItem> educationItems = [];
     protected override async Task OnInitializedAsync()
     {
         resumeItems = await _resumeService.GetResumeQtyAsync();
@@ -45,7 +98,7 @@
 
         for(int i = 1; i <= resumeItems.Project; i++)
         {
-            projects.Add( new ResumeItem{
+            projectItems.Add( new ResumeItem{
                 Name = Loc[$"Project{i}Name"],
                 Year = Loc[$"Project{i}Year"],
                 Description = Loc[$"Project{i}Description"],
@@ -55,7 +108,7 @@
 
         for(int i = 1; i <= resumeItems.Work; i++)
         {
-            works.Add( new ResumeItem{
+            workItems.Add( new ResumeItem{
                 Name = Loc[$"Work{i}Name"],
                 Year = Loc[$"Work{i}Year"],
                 Description = Loc[$"Work{i}Description"],
@@ -65,7 +118,7 @@
 
         for(int i = 1; i <= resumeItems.Education; i++)
         {
-            educations.Add( new ResumeItem{
+            educationItems.Add( new ResumeItem{
                 Name = Loc[$"Education{i}Name"],
                 Year = Loc[$"Education{i}Year"],
                 Description = Loc[$"Education{i}Description"],

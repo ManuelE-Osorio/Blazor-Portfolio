@@ -1,0 +1,179 @@
+﻿@page "/contact"
+@inject IStringLocalizer<Localization.Contact> Loc
+
+<PageTitle>Contact</PageTitle>
+
+<MudPaper Class="d-inline-flex justify-center flex-wrap " Width="100%" Elevation="0">
+
+        <MudPaper Class="ma-4">
+            <MudAvatar Size="Size.Large" Color="Color.Tertiary" Variant="@Variant.Filled" Class="ma-5">
+                <MudIcon Size="@Size.Large"  Icon="@Icons.Material.Filled.Phone"></MudIcon>
+            </MudAvatar>
+        </MudPaper>
+
+        <MudPaper Width="350px" Class="ma-4">
+            <MudText Class="ma-8" Typo="@Typo.h6">@Loc["Number"]</MudText>
+        </MudPaper>
+</MudPaper>
+
+<MudPaper Class="d-inline-flex justify-center flex-wrap " Width="100%" Elevation="0">
+
+    <MudPaper Class="ma-4">
+        <MudAvatar Size="Size.Large" Color="Color.Secondary" Variant="@Variant.Filled" Class="ma-5">
+            <MudIcon Size="@Size.Large"  Icon="@Icons.Material.Filled.Email"></MudIcon>
+        </MudAvatar>
+    </MudPaper>
+
+
+        <MudPaper Width="350px" Class="ma-4">
+        <MudText Class="ma-8" Typo="@Typo.h6">@Loc["Mail"]</MudText>
+        </MudPaper>
+</MudPaper>
+
+<MudPaper Class="d-inline-flex justify-center flex-wrap " Width="100%" Elevation="0">
+
+        <MudPaper Class="ma-4">
+        <MudAvatar Size="Size.Large" Color="Color.Primary" Variant="@Variant.Filled" Class="ma-5">
+            <MudIcon Size="@Size.Large"  Icon="@Icons.Custom.Brands.LinkedIn"></MudIcon>
+        </MudAvatar>
+        </MudPaper>
+
+
+
+        <MudPaper Width="350px" Class="ma-4">
+        <MudLink Color="Color.Info" Target="_blank" Href="https://www.linkedin.com/in/manuel-osorio-0504a5222">
+            <MudText Class="ma-8" Typo="@Typo.h6" >@Loc["Linkedin"]</MudText>            
+        </MudLink>
+        </MudPaper>
+</MudPaper>
+
+
+<MudPaper Class="d-inline-flex justify-center flex-wrap " Width="100%" Elevation="0">
+        <MudPaper Class="ma-4">
+        <MudAvatar Size="Size.Large" Color="Color.Info" Variant="@Variant.Filled" Class="ma-5">
+            <MudIcon Size="@Size.Large"  Icon="@Icons.Custom.Brands.GitHub"></MudIcon>
+        </MudAvatar>
+        </MudPaper>
+
+
+
+        <MudPaper Width="350px" Class="ma-4">
+        <MudLink Color="Color.Info" Target="_blank" Href="https://github.com/ManuelE-Osorio">
+            <MudText Class="ma-8" Typo="@Typo.h6" >@Loc["Github"]</MudText>
+        </MudLink>
+        </MudPaper>
+</MudPaper>
+
+    
+<MudPaper Class="d-inline-flex justify-center flex-wrap " Width="100%" Elevation="0">
+        <MudPaper Class="ma-4">
+        <MudAvatar Size="Size.Large" Color="Color.Warning" Variant="@Variant.Filled" Class="ma-5">
+            <MudIcon Size="@Size.Large"  Icon="@Icons.Material.Filled.ContactPage"></MudIcon>
+        </MudAvatar>
+        </MudPaper>
+
+
+        <MudPaper Width="350px" Class="ma-4">
+        <MudLink Color="Color.Info" Target="_blank" Href="@path">
+            <MudText Class="ma-8" Typo="@Typo.h6" >@Loc["Resume"]</MudText>
+        </MudLink>
+        </MudPaper>
+</MudPaper>
+
+
+
+
+
+
+@* <MudGrid Class="mt-10" Spacing="2" Justify="@Justify.Center">
+
+    <MudItem xs="6" Class="d-flex justify-end align-content-center">
+        <MudPaper>
+        <MudAvatar Size="Size.Large" Color="Color.Tertiary" Variant="@Variant.Filled" Class="ma-5">
+            <MudIcon Size="@Size.Large"  Icon="@Icons.Material.Filled.Phone"></MudIcon>
+        </MudAvatar>
+        </MudPaper>
+    </MudItem>
+
+    <MudItem xs="6" Class="d-flex justify-start align-content-center align-center">
+        <MudPaper Width="350px">
+        <MudText Class="ma-8" Typo="@Typo.h6">@Loc["Number"]</MudText>
+        </MudPaper>
+    </MudItem>
+
+    <MudItem xs="6" Class="d-flex justify-end align-content-center ">
+        <MudPaper>
+        <MudAvatar Size="Size.Large" Color="Color.Secondary" Variant="@Variant.Filled" Class="ma-5">
+            <MudIcon Size="@Size.Large"  Icon="@Icons.Material.Filled.Email"></MudIcon>
+        </MudAvatar>
+        </MudPaper>
+    </MudItem>
+
+    <MudItem xs="6" Class="d-flex justify-start align-content-center align-center">
+        <MudPaper Width="350px">
+        <MudText Class="ma-8" Typo="@Typo.h6">@Loc["Mail"]</MudText>
+        </MudPaper>
+    </MudItem>
+
+    <MudItem xs="6" Class="d-flex justify-end align-content-center">
+        <MudPaper>
+        <MudAvatar Size="Size.Large" Color="Color.Primary" Variant="@Variant.Filled" Class="ma-5">
+            <MudIcon Size="@Size.Large"  Icon="@Icons.Custom.Brands.LinkedIn"></MudIcon>
+        </MudAvatar>
+        </MudPaper>
+    </MudItem>
+
+    <MudItem xs="6" Class="d-flex justify-start align-content-center align-center">
+        <MudPaper Width="350px">
+        <MudLink Color="Color.Info" Target="_blank" Href="https://www.linkedin.com/in/manuel-osorio-0504a5222">
+            <MudText Class="ma-8" Typo="@Typo.h6" >@Loc["Linkedin"]</MudText>            
+        </MudLink>
+        </MudPaper>
+    </MudItem>
+
+    <MudItem xs="6" Class="d-flex justify-end align-content-center">
+        <MudPaper>
+        <MudAvatar Size="Size.Large" Color="Color.Info" Variant="@Variant.Filled" Class="ma-5">
+            <MudIcon Size="@Size.Large"  Icon="@Icons.Custom.Brands.GitHub"></MudIcon>
+        </MudAvatar>
+        </MudPaper>
+    </MudItem>
+
+    <MudItem xs="6" Class="d-flex justify-start align-content-center align-center">
+        <MudPaper Width="350px">
+        <MudLink Color="Color.Info" Target="_blank" Href="https://github.com/ManuelE-Osorio">
+            <MudText Class="ma-8" Typo="@Typo.h6" >@Loc["Github"]</MudText>
+        </MudLink>
+        </MudPaper>
+    </MudItem>
+    
+    <MudItem xs="6" Class="d-flex justify-end align-content-center">
+        <MudPaper >
+        <MudAvatar Size="Size.Large" Color="Color.Warning" Variant="@Variant.Filled" Class="ma-5">
+            <MudIcon Size="@Size.Large"  Icon="@Icons.Material.Filled.ContactPage"></MudIcon>
+        </MudAvatar>
+        </MudPaper>
+    </MudItem>
+
+    <MudItem xs="6" Class="d-flex justify-start align-content-center align-center" >
+        <MudPaper Width="350px">
+        <MudLink Color="Color.Info" Target="_blank" Href="@path">
+            <MudText Class="ma-8" Typo="@Typo.h6" >@Loc["Resume"]</MudText>
+        </MudLink>
+        </MudPaper>
+    </MudItem>
+
+</MudGrid> *@
+
+
+
+@code {
+    
+    public string? path;
+
+    protected override void OnInitialized()
+    {
+        var name = Loc["ResumeName"];
+        path = $"resume/{name}";
+    }
+}

@@ -5,81 +5,74 @@
 <PageTitle>Projects</PageTitle>
 
 <MudPaper Width="100%" Elevation="0">
-    <MudContainer>
+<MudContainer>
 
-
-    
 @if (projects == null)
 {
-    <p><em>Loading...</em></p>
+    <MudProgressLinear Color="Color.Secondary" Indeterminate="true" Class="my-7"/>
 }
 else
 {
 <MudTabs Elevation="4" Rounded="true" Centered="true" Position="Position.Top">
-    <MudTabPanel Text="Angular">
-        <MudGrid Class="py-10">
+    
+    <MudTabPanel Text="Angular" BadgeColor="Color.Secondary">
+        <MudCarousel Class="mt-4 overflow-visible overflow-x-hidden " Style="min-height: 800px" ShowArrows="true" AutoCycle="false" TData="object" BulletsPosition="Position.Top">
             @if(angularProjects is not null)
             @foreach(var project in angularProjects)
             {
-                <MudItem xs="6">
-                    <MudPaper Class="d-flex align-center justify-center mud-width-full">
-                        <ProjectCard project="project"></ProjectCard>
-                    </MudPaper>
-                </MudItem>
+                <MudCarouselItem Transition="Transition.Slide">           
+                    <ProjectCard project="project"></ProjectCard>
+                </MudCarouselItem>
             }
-        </MudGrid>
+        </MudCarousel>
     </MudTabPanel>
-    <MudTabPanel Text="MVC">
-        <MudGrid Class="py-10">
+
+    <MudTabPanel Text="MVC" BadgeColor="Color.Secondary">
+        <MudCarousel Class="mt-4 overflow-scroll" Style="min-height: 800px" ShowArrows="true" AutoCycle="false" TData="object">
             @if(mvcProjects is not null)
             @foreach(var project in mvcProjects)
             {
-                <MudItem xs="6">
-                    <MudPaper Class="d-flex align-center justify-center mud-width-full">
+                <MudCarouselItem Transition="Transition.Slide">
                         <ProjectCard project="project"></ProjectCard>
-                    </MudPaper>
-                </MudItem>
+                </MudCarouselItem>
             }
-        </MudGrid>
+        </MudCarousel>
     </MudTabPanel>
-    <MudTabPanel Text="Blazor">
-        <MudGrid Class="py-10">
+
+    <MudTabPanel Text="Blazor" BadgeColor="Color.Secondary">
+        <MudCarousel Class="mt-4" Style="min-height: 800px" ShowArrows="true" AutoCycle="false" TData="object">
             @if(blazorProjects is not null)
             @foreach(var project in blazorProjects)
             {
-                <MudItem xs="6">
-                    <MudPaper Class="d-flex align-center justify-center mud-width-full">
+                <MudCarouselItem Transition="Transition.Slide">
                         <ProjectCard project="project"></ProjectCard>
-                    </MudPaper>
-                </MudItem>
+                </MudCarouselItem>
             }
-        </MudGrid>
+        </MudCarousel>
     </MudTabPanel>
-    <MudTabPanel Text="React">
-        <MudGrid Class="py-10">
+
+    <MudTabPanel Text="React" BadgeColor="Color.Secondary">
+        <MudCarousel Class="mt-4" Style="min-height: 800px" ShowArrows="true" AutoCycle="false" TData="object">
             @if(reactProjects is not null)
             @foreach(var project in reactProjects)
             {
-                <MudItem xs="6">
-                    <MudPaper Class="d-flex align-center justify-center mud-width-full">
+                <MudCarouselItem Transition="Transition.Slide">
                         <ProjectCard project="project"></ProjectCard>
-                    </MudPaper>
-                </MudItem>
+                </MudCarouselItem>
             }
-        </MudGrid>
+        </MudCarousel>
     </MudTabPanel>
-    <MudTabPanel Text="Console">
-        <MudGrid Class="py-10">
+
+    <MudTabPanel Text="@Loc["Console"]" BadgeColor="Color.Secondary">
+        <MudCarousel Class="mt-4" Style="min-height: 800px" ShowArrows="true" AutoCycle="false" TData="object">
             @if(consoleProjects is not null)
             @foreach(var project in consoleProjects)
             {
-                <MudItem xs="6">
-                    <MudPaper Class="d-flex align-center justify-center mud-width-full py-8">
+                <MudCarouselItem Transition="Transition.Slide">
                         <ProjectCard project="project"></ProjectCard>
-                    </MudPaper>
-                </MudItem>
+                </MudCarouselItem>
             }
-        </MudGrid>
+        </MudCarousel>
     </MudTabPanel>
 </MudTabs>
 }
@@ -106,6 +99,7 @@ else
 
         angularProjects = projectsfromJson
             .Where( p => p.Framework == "Angular")
+            .OrderByDescending( p => p.Id)
             .Select
             ( p => 
                 new Project(p, Loc[$"{p.Framework}{p.Id}Name"],Loc[$"{p.Framework}{p.Id}Description"])
@@ -113,6 +107,7 @@ else
             .ToList();
         mvcProjects = projectsfromJson
             .Where( p => p.Framework == "MVC")
+            .OrderByDescending( p => p.Id)
             .Select
             ( p => 
                 new Project(p, Loc[$"{p.Framework}{p.Id}Name"],Loc[$"{p.Framework}{p.Id}Description"])
@@ -120,6 +115,7 @@ else
             .ToList();
         blazorProjects = projectsfromJson
             .Where( p => p.Framework == "Blazor")
+            .OrderByDescending( p => p.Id)
             .Select
             ( p => 
                 new Project(p, Loc[$"{p.Framework}{p.Id}Name"],Loc[$"{p.Framework}{p.Id}Description"])
@@ -127,6 +123,7 @@ else
             .ToList();
         reactProjects = projectsfromJson
             .Where( p => p.Framework == "React")
+            .OrderByDescending( p => p.Id)
             .Select
             ( p => 
                 new Project(p, Loc[$"{p.Framework}{p.Id}Name"],Loc[$"{p.Framework}{p.Id}Description"])
@@ -134,6 +131,7 @@ else
             .ToList();
         consoleProjects = projectsfromJson
             .Where( p => p.Framework == "Console")
+            .OrderByDescending( p => p.Id)
             .Select
             ( p => 
                 new Project(p, Loc[$"{p.Framework}{p.Id}Name"],Loc[$"{p.Framework}{p.Id}Description"])

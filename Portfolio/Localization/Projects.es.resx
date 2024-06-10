@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Console" xml:space="preserve">
+    <value>Consola</value>
+    <comment/>
+  </data>
+  <data name="Angular3Name" xml:space="preserve">
+    <value>Sleep Tracker</value>
+    <comment/>
+  </data>
+  <data name="Angular3Description" xml:space="preserve">
+    <value>Aplicación de seguimiento del sueño angular creada con Angular Material y ASP.NET Core WebAPI.</value>
+    <comment/>
+  </data>
+  <data name="Angular2Name" xml:space="preserve">
+    <value>Coffee Tracker</value>
+    <comment/>
+  </data>
+  <data name="Angular2Description" xml:space="preserve">
+    <value>Aplicación angular para rastrear el consumo de café de los usuarios. La aplicación permite al usuario: obtener una lista de registros de tazas de café anteriores, mostrarlos en una lista, editar sus detalles y agregar navegación entre diferentes vistas.</value>
+    <comment/>
+  </data>
+  <data name="Angular1Name" xml:space="preserve">
+    <value>Tour of Heroes</value>
+    <comment/>
+  </data>
+  <data name="Angular1Description" xml:space="preserve">
+    <value>Aplicación tutorial Tour of Heroes Angular. La aplicación permite al usuario: obtener una lista de héroes, mostrarlos en una lista, editar sus detalles y agregar navegación entre diferentes vistas. La aplicación se creó como una introducción a los fundamentos de Angular.</value>
+    <comment/>
+  </data>
+  <data name="Blazor1Name" xml:space="preserve">
+    <value>Portafolio</value>
+    <comment/>
+  </data>
+  <data name="Blazor1Description" xml:space="preserve">
+    <value>Aplicación web de portafolios que utiliza Blazor y MudBlazor</value>
+    <comment/>
+  </data>
+  <data name="MVC3Name" xml:space="preserve">
+    <value>Budget</value>
+    <comment/>
+  </data>
+  <data name="MVC3Description" xml:space="preserve">
+    <value>Aplicación de seguimiento de presupuesto ASP.NET Core MVC. El usuario puede realizar operaciones CRUD en transacciones y categorías. Las transacciones están vinculadas a las categorías como una relación de muchos a uno mediante Entity Framework. Las operaciones de creación, actualización y eliminación se realizan mediante modales generados con javascript. Las solicitudes se publican mediante la API fetch.</value>
+    <comment/>
+  </data>
+  <data name="MVC2Name" xml:space="preserve">
+    <value>Todo</value>
+    <comment/>
+  </data>
+  <data name="MVC2Description" xml:space="preserve">
+    <value>Aplicación ASP.NET Todo List que utiliza la API web mínima y la API Fetch de JavaScript. El usuario puede crear una lista de tareas pendientes a través de una aplicación de una sola página y realizar operaciones básicas en la lista.</value>
+    <comment/>
+  </data>
+  <data name="MVC1Name" xml:space="preserve">
+    <value>Movies</value>
+    <comment/>
+  </data>
+  <data name="MVC1Description" xml:space="preserve">
+    <value>Aplicación de películas ASP.NET MVC. El usuario puede realizar operaciones CRUD en una página web que almacena películas y programas de televisión.</value>
+    <comment/>
+  </data>
+  <data name="Console4Name" xml:space="preserve">
+    <value>Drinks</value>
+    <comment/>
+  </data>
+  <data name="Console4Description" xml:space="preserve">
+    <value>Aplicación que utiliza HTTPRequest a una API pública (https://www.thecocktaildb.com/api.php) para obtener información de un menú de bebidas.</value>
+    <comment/>
+  </data>
+  <data name="Console3Name" xml:space="preserve">
+    <value>Flashcards</value>
+    <comment/>
+  </data>
+  <data name="Console3Description" xml:space="preserve">
+    <value>Sencillo juego de cartas usando SQL Server y ADO.NET</value>
+    <comment/>
+  </data>
+  <data name="Console2Name" xml:space="preserve">
+    <value>Excel</value>
+    <comment/>
+  </data>
+  <data name="Console2Description" xml:space="preserve">
+    <value>Esta aplicación permite al usuario insertar una hoja de trabajo de Excel utilizando la biblioteca EPPlus en una base de datos en Sqlserver con EFCore. La plantilla puede ser generada por los usuarios con algunas restricciones.</value>
+    <comment/>
+  </data>
+  <data name="Console1Name" xml:space="preserve">
+    <value>PhoneBook</value>
+    <comment/>
+  </data>
+  <data name="Console1Description" xml:space="preserve">
+    <value>Aplicación de consola que permite al usuario crear contactos. Desarrollado usando C#/.NET, usando Entity Framework con base de datos de SQL Server.</value>
+    <comment/>
+  </data>
+  <data name="Angular4Name" xml:space="preserve">
+    <value>Quiz Game</value>
+    <comment/>
+  </data>
+  <data name="Angular4Description" xml:space="preserve">
+    <value>Juego de preguntas tipo Kahoot con gestión de roles, utilizando ASP.NET como backend y componentes de Angular Material. La aplicación contiene tres modelos principales: Preguntas, Cuestionarios y Juegos. Cada uno de estos está relacionado con relaciones de uno a uno, de uno a varios o de varios a varios mediante Entity Framework. El proyecto utiliza el patrón de repositorio y  ASP.NET Identity para la autenticación.</value>
+    <comment/>
+  </data>
+</root>

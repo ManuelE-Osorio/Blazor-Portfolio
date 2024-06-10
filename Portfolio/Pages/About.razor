@@ -1,7 +1,63 @@
 ﻿@page "/"
+@inject IStringLocalizer<Localization.About> Loc
+@inject SkillService _skillService
 
-<h3>About</h3>
+<PageTitle>About</PageTitle>
 
+<MudPaper Elevation="0" Class="mt-15 ml-7">
+<MudContainer MaxWidth="MaxWidth.Large" >
+        <MudCard Class="rounded-lg mb-15" Style="width:100%; height: 100%">
+            <MudCardContent Class="ma-5">
+                <MudText Class="mb-5" Typo="Typo.h3" Color="@Color.Info">@Loc["Name"]</MudText>
+                <MudText Class="mb-5" Typo="Typo.h5" Color="@Color.Secondary">@Loc["Title"]</MudText>
+                <MudText Class="mb-5" Typo="Typo.body1">@Loc["Description"]</MudText>
+            </MudCardContent>
+        </MudCard>
+
+        @if(skills is not null)
+        {
+            <MudCard Class="rounded-lg mb-15  " Style="width:100%; height: 100%">
+                <MudCardContent Class="ma-5">
+                    <MudText Class="mb-5" Typo="Typo.h4" Color="@Color.Info">@Loc["Skills"]</MudText>
+                    
+                    <MudStack Row="true" Wrap="Wrap.Wrap">
+                        @foreach(var skill in skills)
+                        {
+                            <MudPaper Elevation="0">
+                            <MudText Typo="Typo.body1">@skill.Name</MudText>
+                            <MudRating ReadOnly="true" SelectedValue="@skill.Rating" FullIcon="@Icons.Material.Filled.Circle" EmptyIcon="@Icons.Material.Outlined.Circle"/>
+                            </MudPaper>
+                        }
+                    </MudStack>
+                    
+                    
+                    
+                    @* <MudGrid Class="mb-5 d-flex flex-wrap">
+                        
+                        @foreach(var skill in skills)
+                        {
+                            <MudPaper Class="d-flex flex-wrap">
+                                <MudItem xs="3" Class="mb-1 d-flex flex-wrap">
+                                    <MudText Typo="Typo.body1">@skill.Name</MudText>
+                                </MudItem>
+                                <MudItem xs="3" Class="mb-1 d-flex flex-wrap">
+                                    <MudRating ReadOnly="true" SelectedValue="@skill.Rating" FullIcon="@Icons.Material.Filled.Circle" EmptyIcon="@Icons.Material.Outlined.Circle"/>
+                                </MudItem>
+                            </MudPaper>
+                        }
+                        
+                    </MudGrid> *@
+                </MudCardContent>
+            </MudCard>
+        }
+</MudContainer>
+</MudPaper>
 @code {
+    public List<Skill>? skills;
+
+    protected override async Task OnInitializedAsync()
+    {
+        skills = await _skillService.GetSkillsAsync();
+    }
 
 }
